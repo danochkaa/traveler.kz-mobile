@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Events"
+    android:background="#f2f2f2">
+
+    <LinearLayout
+        android:id="@+id/lytSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#46A5B9"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="31dp"
+            android:layout_weight="3"
+            android:background="#00FFFFFF"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#F5FFFFFF"
+            android:hint="search"
+            android:inputType="text"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="#E80A0A0A"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listMenu"
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:layout_below="@+id/lytSearch"
+        android:background="#f2f2f2"
+        android:divider="@null"
+        android:padding="5dp" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.avia.BottomNavigationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_bottom_navigation" />
+
+</RelativeLayout>

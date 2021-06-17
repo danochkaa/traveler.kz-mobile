@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="523dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="199dp"
+        tools:ignore="MissingConstraints">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="40dp"
+                android:text="WELCOME TO TRAVELER"
+                android:textColor="#034758"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/Fname"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Lname"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Phone "
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Email "
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="#46A5B9"
+                android:onClick="onClick"
+                android:shadowColor="#8D242222"
+                android:shadowDx="2"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="SIGNUP"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/signintext"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Already have account? Sign in"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

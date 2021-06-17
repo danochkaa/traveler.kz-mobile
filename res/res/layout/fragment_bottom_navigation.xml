@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2fd9d5"
+    tools:context=".BottomNavigationFragment">
+
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="336dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="#2fd9d5"
+        android:text="HOME"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#DF292828"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/flights"
+        android:layout_width="336dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="2fd9d5"
+        android:text="flights"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#DF292828"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/events"
+        android:layout_width="336dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="#2fd9d5"
+        android:text="events"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#DF292828"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="336dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="#2fd9d5"
+        android:text="account"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#DF292828"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>
